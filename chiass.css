@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0rem;
+    background: #4c464621;
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+.logo{
+    width: 10px;
+    cursor: pointer;
+    margin: 1em .5em;
+    font-size: large;
+    color: white;
+    font-weight: bolder;
+   
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: grey;
+    padding: 1em .5em;
+    box-shadow: 0rem .1em .2em black;
+    position: fixed;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: inline-block;
+    margin-right:30px ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+.menu-icon{
+   
+    cursor: pointer;
+    display: none;
+    margin-right: 1em;
+    background: #423c3c;
+    color: white;
+    padding: .5rem;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+/*here the media screen comes in */
+
+
+
+@media ( max-width:700px){
+    nav ul {
+        width: 100%;
+        background: linear-gradient(rgb(101, 53, 53),pink);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        box-sizing: border-box;
+       
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0px;
+        padding-right: 5px;
+        box-sizing: border-box;
+        
+    }
+
+    nav ul li a{
+        color: white;
+        padding-right: 20px;
+    }
+
+    .menu-icon{
+        position: relative;
+        display: block;
+    }
+    .menu-list{
+        transition: .5s;
+        overflow: hidden;
+    }
+  
+    
+    
+}
+
+
+
